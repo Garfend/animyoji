@@ -3,13 +3,29 @@ import '../../gen/assets.gen.dart';
 
 final List<Map<String, dynamic>> mockSeriesJson = [
   {
+    "seriesId": 4,
+    "seriesName": "Demon Slayer",
+    "seriesCategory": ["action", "drama", "Dark Fantasy", "Adventure"],
+    "seriesRating": 8.7,
+    "seriesImageUrl": Assets.images.demonSlayerCover.path,
+    "cover": Assets.images.demonSlayerCover.path,
+    "seriesLogo": Assets.images.demonSlayerLogo.path,
+    "description": "Tanjiro Kamado becomes a demon slayer to save his sister Nezuko, who has been turned into a demon, while seeking revenge against the demon who killed his family.",
+    "statistics":{
+      "views": 2800000,
+      "clap": 490000,
+      "seasons": "4 Seasons"
+    },
+    "seasons": "4 Seasons"
+  },
+  {
     "seriesId": 1,
     "seriesName": "Detective Conan",
     "seriesCategory": ["mystery", "thriller"],
     "seriesRating": 9.0,
     "seriesImageUrl": Assets.images.conanSeries.path,
     "cover": Assets.images.conanSeries.path,
-    "seriesLogo": null,
+    "seriesLogo": Assets.images.canonLogo.path,
     "description": "High school detective Shinichi Kudo was transformed into a child after being poisoned by a mysterious organization. Now as Conan Edogawa, he must solve cases while searching for a way back to his original form.",
     "statistics":{
       "views": 2500000,
@@ -50,22 +66,7 @@ final List<Map<String, dynamic>> mockSeriesJson = [
     },
     "seasons": "Multiple Series"
   },
-  {
-    "seriesId": 4,
-    "seriesName": "Demon Slayer",
-    "seriesCategory": ["action", "drama", "Dark Fantasy", "Adventure"],
-    "seriesRating": 8.7,
-    "seriesImageUrl": Assets.images.demonSlayerCover.path,
-    "cover": Assets.images.demonSlayerCover.path,
-    "seriesLogo": Assets.images.demonSlayerLogo.path,
-    "description": "Tanjiro Kamado becomes a demon slayer to save his sister Nezuko, who has been turned into a demon, while seeking revenge against the demon who killed his family.",
-    "statistics":{
-    "views": 2800000,
-    "clap": 490000,
-      "seasons": "4 Seasons"
-    },
-    "seasons": "4 Seasons"
-  },
+
 ];
 
 List<SeriesModel> getMockSeries() {
