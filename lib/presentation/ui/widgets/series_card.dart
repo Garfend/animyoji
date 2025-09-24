@@ -49,7 +49,7 @@ class SeriesCard extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.star,
-                          color: Colors.amber,
+                          color: Color(0xFF5436F8),
                           size: 14,
                         ),
                         const SizedBox(width: 4),

@@ -21,20 +21,16 @@ class CategoryChip extends StatelessWidget {
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
           color: selected
               ? Theme.of(context).colorScheme.onSecondary
-              : Theme.of(context).textTheme.bodyMedium?.backgroundColor,
+              : Color(0xFF5436F8),
+          fontWeight: FontWeight.bold,
+
         ),
       ),
       shape: StadiumBorder(),
       selected: selected,
       onSelected: onSelected,
-      selectedColor: Theme.of(context).colorScheme.primary,
+      selectedColor: Color(0xFF5436F8),
       showCheckmark: false,
-      labelStyle: TextStyle(
-        color: selected
-            ? Theme.of(context).colorScheme.onSecondary
-            : Theme.of(context).textTheme.bodyMedium?.color,
-        fontWeight: FontWeight.bold,
-      ),
     );
   }
 }
