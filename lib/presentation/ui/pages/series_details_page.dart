@@ -62,7 +62,7 @@ class SeriesDetailsPage extends StatelessWidget {
             SliverToBoxAdapter(
               child: Column(
                 children: [
-                  if (series.seriesLogo.isNotEmpty) 70.height,
+                  if (series.seriesLogo.isNotEmpty) 60.height,
                   16.height,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -83,15 +83,17 @@ class SeriesDetailsPage extends StatelessWidget {
                   StatisticsSection(statistics: series.statistics),
                   16.height,
                   SeriesContentDescribtion(series: series),
+                  32.height
                 ],
               ).paddingHorizontal(20),
             ),
+
           ],
         ),
         bottomNavigationBar: Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: Theme.of(context).scaffoldBackgroundColor,
+            color: Color(0xFF16103C),
           ),
           child: SafeArea(
             child: Row(

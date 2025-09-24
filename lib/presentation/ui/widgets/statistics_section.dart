@@ -22,12 +22,13 @@ class StatisticsSection extends StatelessWidget {
           children: [
             Row(
               children: [
-                Icon(Icons.remove_red_eye),
+                Icon(Icons.remove_red_eye,color: Theme.of(context).colorScheme.surface),
                 4.width,
                 Text(
                   statistics.views.toCompactString(),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
+                    color: Theme.of(context).colorScheme.surface,
                   ),
                 ),
               ],
@@ -35,26 +36,26 @@ class StatisticsSection extends StatelessWidget {
 
             Row(
               children: [
-                Icon(Icons.waving_hand),
+                Icon(Icons.waving_hand,color: Theme.of(context).colorScheme.surface),
                 4.width,
                 Text(
                   statistics.clap.toCompactString(),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.primary,
+                    color: Theme.of(context).colorScheme.surface,
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Icon(Icons.movie),
+                Icon(Icons.movie, color: Theme.of(context).colorScheme.surface),
                 4.width,
                 Text(
                   statistics.seasons,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.primary,
+                    color: Theme.of(context).colorScheme.surface,
                   ),
                 ),
               ],
@@ -62,7 +63,6 @@ class StatisticsSection extends StatelessWidget {
           ],
         ),
         const Divider(),
-
       ],
     );
   }

@@ -16,14 +16,15 @@ class SeriesContentDescribtion extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SvgPicture.asset(Assets.icons.fireIcon, width: 24, height: 24),
+        SvgPicture.asset(Assets.icons.fireIcon, width: 38, height: 28),
         16.width,
         Expanded(
           child: Text(
             series.description,
-            style: Theme.of(
-              context,
-            ).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).colorScheme.surface,
+            ),
             overflow: TextOverflow.visible,
             maxLines: null,
           ),
