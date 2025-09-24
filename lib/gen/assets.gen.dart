@@ -27,12 +27,25 @@ class $AssetsIconsGen {
   /// File path: assets/icons/fire_icon.svg
   String get fireIcon => 'assets/icons/fire_icon.svg';
 
+  /// File path: assets/icons/star.svg
+  String get star => 'assets/icons/star.svg';
+
   /// List of all assets
-  List<dynamic> get values => [appLogosPng, appLogosSvg, cancel, fireIcon];
+  List<dynamic> get values => [
+    appLogosPng,
+    appLogosSvg,
+    cancel,
+    fireIcon,
+    star,
+  ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/canon_logo.png
+  AssetGenImage get canonLogo =>
+      const AssetGenImage('assets/images/canon_logo.png');
 
   /// File path: assets/images/conan.png
   AssetGenImage get conan => const AssetGenImage('assets/images/conan.png');
@@ -83,8 +96,12 @@ class $AssetsImagesGen {
   /// File path: assets/images/rocket_boy.svg
   String get rocketBoy => 'assets/images/rocket_boy.svg';
 
+  /// File path: assets/images/star.png
+  AssetGenImage get star => const AssetGenImage('assets/images/star.png');
+
   /// List of all assets
   List<dynamic> get values => [
+    canonLogo,
     conan,
     conanSeries,
     demonSlayerCover,
@@ -99,6 +116,7 @@ class $AssetsImagesGen {
     planImage,
     planPageHero,
     rocketBoy,
+    star,
   ];
 }
 
