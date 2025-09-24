@@ -1,17 +1,15 @@
-import 'package:animyoji/gen/assets.gen.dart';
 import 'package:animyoji/helpers/extensions/int_extensions.dart';
 import 'package:animyoji/helpers/extensions/padding_extensions.dart';
 import 'package:animyoji/presentation/ui/widgets/background_frame.dart';
-import 'package:animyoji/presentation/ui/widgets/category_chip.dart';
 import 'package:animyoji/presentation/ui/widgets/series_card.dart';
 import 'package:animyoji/presentation/ui/widgets/series_content_describtion.dart';
 import 'package:animyoji/presentation/ui/widgets/statistics_section.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 
 import '../../../data/models/series_model.dart';
 import '../widgets/custom_button.dart';
+import '../widgets/static_chip.dart';
 
 class SeriesDetailsPage extends StatelessWidget {
   final SeriesModel series;
@@ -72,8 +70,7 @@ class SeriesDetailsPage extends StatelessWidget {
                         runSpacing: 4,
                         children: series.seriesCategory
                             .map(
-                              (cat) =>
-                                  CategoryChip(label: cat.name.capitalize()),
+                              (cat) => StaticChip(label: cat.name.capitalize()),
                             )
                             .toList(),
                       ),
@@ -83,18 +80,15 @@ class SeriesDetailsPage extends StatelessWidget {
                   StatisticsSection(statistics: series.statistics),
                   16.height,
                   SeriesContentDescribtion(series: series),
-                  32.height
+                  32.height,
                 ],
               ).paddingHorizontal(20),
             ),
-
           ],
         ),
         bottomNavigationBar: Container(
           padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: Color(0xFF16103C),
-          ),
+          decoration: BoxDecoration(color: Color(0xFF16103C)),
           child: SafeArea(
             child: Row(
               children: [

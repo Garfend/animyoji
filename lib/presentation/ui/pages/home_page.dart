@@ -7,9 +7,7 @@ import 'package:animyoji/presentation/ui/pages/series_details_page.dart';
 import 'package:animyoji/presentation/ui/widgets/background_frame.dart';
 import 'package:animyoji/presentation/ui/widgets/category_chip.dart';
 import 'package:animyoji/presentation/ui/widgets/character_card.dart';
-import 'package:animyoji/presentation/ui/widgets/rating_chip.dart';
 import 'package:animyoji/presentation/ui/widgets/series_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/fake_data/fake_characters.dart';

@@ -1,8 +1,6 @@
 import 'package:animyoji/data/models/series_statistics.dart';
 import 'package:animyoji/helpers/extensions/int_extensions.dart';
 import 'package:animyoji/helpers/extensions/numerical_format_extention.dart';
-import 'package:animyoji/helpers/extensions/padding_extensions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StatisticsSection extends StatelessWidget {
