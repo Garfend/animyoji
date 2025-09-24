@@ -1,6 +1,10 @@
 ### Animyoji
 
-+
+## 🎬 Demo Preview
+
+[![Animyoji Demo](https://img.youtube.com/vi/bj4AzTbcWu8/maxresdefault.jpg)](https://youtube.com/shorts/bj4AzTbcWu8)
+
+> **[📱 Watch the app demo on YouTube Shorts](https://youtube.com/shorts/bj4AzTbcWu8)**
 
 Anime streaming app (prototype) built with Flutter, following a pragmatic Clean Architecture layout.
 The goal is to keep UI lean, prepare a domain-centered core, and isolate data/model concerns for
